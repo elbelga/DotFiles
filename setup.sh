@@ -1,20 +1,20 @@
 #!/bin/bash
 
 # Ask to remove folder
-rm -i ~/.zsh
+rm -i  ~/.zsh
 # If folder removed link
-[ ! -f ~/.zsh ]i &&  ln -s ~/.zsh zsh
+[ ! -f ~/.zsh ] &&  ln -s ${PWD}/zsh ~/.zsh 
 
 # Ask to remove folder
 rm -i ~/.zshrc 
 # If folder removed link
-[ ! -f ~/.zshrc ] &&  ln -s ~/.zshrc zshrc 
+[ ! -f ~/.zshrc ] &&  ln -s ${PWD}/zshrc ~/.zshrc
 
 
 # Ask to remove folder
 rm -i ~/.vim
 # If folder removed link
-[ ! -f ~/.vim ] &&  ln -s ~/.vim SpaceVim
+[ ! -f ~/.vim ] &&  ln -s ${PWD}/SpaceVim ~/.vim
 
 
 
